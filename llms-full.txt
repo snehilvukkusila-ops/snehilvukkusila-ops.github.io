@@ -1,0 +1,95 @@
+# List notes
+
+Source: api/quillpost~3anotes/list-notes
+
+# List notes
+
+`GET /notes?notebook=\{notebook_id\}` returns the notes of one notebook.
+
+# The inbox
+
+Source: concepts/inbox
+
+# The inbox
+
+The inbox lists notes that are not yet in a notebook. Notes sync every minute, and on every save.
+
+![The inbox with three notes](screenshots/inbox/1.png)
+
+:::note
+
+A note stays in the inbox until you move it.
+
+:::
+
+| Column | Meaning |
+|---|---|
+| Title | The first line of the note |
+| Updated | When it last changed |
+
+# Quillpost team docs
+
+Source: ./
+
+# Quillpost team docs
+
+Quillpost keeps your notes in notebooks and shares them with your team.
+
+- [The inbox](concepts/inbox.md)
+- [Create a note](tasks/create-a-note.md)
+- [Share a notebook](tasks/share-a-notebook.md)
+- [Keyboard shortcuts](reference/keyboard-shortcuts.md)
+- [List notes (API)](api/quillpost~3anotes/list-notes.md)
+- [Archive a notebook](tasks/archive-a-notebook.md)
+
+See also the known issues page for what is being fixed.
+
+# Keyboard shortcuts
+
+Source: reference/keyboard-shortcuts
+
+# Keyboard shortcuts
+
+| Keys | Action |
+|---|---|
+| Ctrl+N | New note |
+| Ctrl+S | Save |
+| Ctrl+K | Search |
+
+# Archive a notebook
+
+Source: tasks/archive-a-notebook
+
+# Archive a notebook
+
+Open the notebook menu and press **Archive**.
+
+# Create a note
+
+Source: tasks/create-a-note
+
+# Create a note
+
+1. Press **New note**.
+2. Type a title, then the body.
+3. Press **Save**. The note is saved with the id `\{note_id\}` shown in the address bar.
+
+![The new note form](screenshots/create/1.png)
+
+To call the API, send the header `Authorization: Bearer <QUILLPOST_TOKEN>` where <QUILLPOST_TOKEN> is your own placeholder value.
+
+```bash
+curl -H 'Authorization: Bearer <QUILLPOST_TOKEN>' https://quillpost.example.invalid/notes/{note_id}
+```
+
+# Share a notebook
+
+Source: tasks/share-a-notebook
+
+# Share a notebook
+
+Open the notebook, press **Share**, and pick who can read or edit it.
+
+Read [the inbox](../concepts/inbox.md) first if you have not.
+
+This links a page this version does not hold: [Notebook roles](../concepts/roles.md).

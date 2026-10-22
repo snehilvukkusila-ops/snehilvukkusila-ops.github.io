@@ -1,0 +1,13 @@
+# Quillpost team docs
+
+> A fictional note-taking app.
+
+## Docs
+
+- [List notes](api/quillpost~3anotes/list-notes): List notes
+- [The inbox](concepts/inbox): The inbox
+- [Quillpost team docs](./): Quillpost team docs
+- [Keyboard shortcuts](reference/keyboard-shortcuts): Keyboard shortcuts
+- [Archive a notebook](tasks/archive-a-notebook): Archive a notebook
+- [Create a note](tasks/create-a-note): Create a note
+- [Share a notebook](tasks/share-a-notebook): Share a notebook

@@ -54,8 +54,9 @@ return HTTP 200. Anything else returns the root `404.html`.
 ## Differences from the original apps
 - Everything lives under a path prefix (`/shadcn-admin/`, `/tailadmin/`).
 - Probe apps: the live server answers every declared route with the same static page, so nothing changes except the
-  server. Forms are plain HTML with no submit target. The server's `/api/*` JSON endpoints and `/login` are not
-  mirrored (no page calls them). The catch-all route `/*` is mirrored at `/probe-pages/not-found/`; other unknown paths return a real 404.
+  server. Forms are plain HTML with no submit target. The two `GET /api/goals` and `/api/goals/owners` calls that the Probe Guide pages fire are snapshots of the server's
+  `{"ok": true}` replies, stored at `/api/goals/` and `/api/goals/owners/` at the site root (so absolute `/api/...` paths work);
+  they are served as `text/html`. `/login` is not mirrored (no page calls it). The catch-all route `/*` is mirrored at `/probe-pages/not-found/`; other unknown paths return a real 404.
   `/probe-fields/` and `/probe-guide/` answer 404 on the live server; here they are small stub pages.
 - Extensionless links (`/probe-pages/team`) get a 301 to the trailing-slash form from GitHub Pages.
 - shadcn-admin: `/terms` is not a route of the app; it was seen by the crawler and renders the app's own not-found page (still HTTP 200 here).

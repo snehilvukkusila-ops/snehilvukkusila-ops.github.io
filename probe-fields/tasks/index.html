@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Tasks · Probe Fields</title>
+  </head>
+  <body>
+    <nav aria-label="Main">
+      <a href="/probe-fields/tasks">Tasks</a>
+      <a href="/probe-fields/profile">Profile</a>
+      <a href="/probe-fields/about">About</a>
+    </nav>
+    <main data-route="/tasks">
+      <p class="breadcrumb">Home / Tasks</p>
+      <h1>Tasks</h1>
+      <p><span class="badge">Beta</span></p>
+      <p>Every open task, who it is assigned to, and its priority.</p>
+      <table>
+        <thead><tr><th>Title</th><th>Priority</th><th>Status</th></tr></thead>
+        <tbody>
+          <tr><th scope="row">Acme Corp</th><td>Priority 1</td><td>Status 1</td></tr>
+          <tr><th scope="row">Item 2</th><td>Priority 2</td><td>Status 2</td></tr>
+          <tr><th scope="row">Item 3</th><td>Priority 3</td><td>Status 3</td></tr>
+        </tbody>
+      </table>
+    <div class="controls">
+      <a class="control" href="/probe-fields/tasks/new">New task</a>
+    </div>
+    </main>
+  </body>
+</html>

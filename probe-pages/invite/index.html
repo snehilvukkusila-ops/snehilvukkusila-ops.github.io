@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Invite a team member · Probe Pages</title>
+  </head>
+  <body>
+    <nav aria-label="Main">
+      <a href="/probe-pages/team">Team</a>
+      <a href="/probe-pages/settings">Settings</a>
+      <a href="/probe-pages/profile">Profile</a>
+      <button type="button">Sign out</button>
+    </nav>
+    <main data-route="/invite">
+      <p class="breadcrumb">Home / Invite</p>
+      <h1>Invite a team member</h1>
+      <form name="invite" data-submit="client_only">
+        <label for="invite-email">Email</label>
+        <input type="email" id="invite-email" name="invite-email" required />
+        <label for="invite-role">Role</label>
+        <select id="invite-role" name="invite-role" required>
+          <option value="Member">Member</option>
+          <option value="Admin">Admin</option>
+          <option value="Viewer">Viewer</option>
+        </select>
+        <label for="invite-send-welcome-email">Send welcome email</label>
+        <input type="checkbox" id="invite-send-welcome-email" name="invite-send-welcome-email" />
+        <label for="invite-access-expires">Access expires</label>
+        <input type="date" id="invite-access-expires" name="invite-access-expires" />
+        <label for="invite-seat-limit">Seat limit</label>
+        <input type="number" id="invite-seat-limit" name="invite-seat-limit" />
+        <button type="submit">Invite</button>
+      </form>
+    </main>
+  </body>
+</html>

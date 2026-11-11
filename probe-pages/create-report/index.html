@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Create a new report · Probe Pages</title>
+  </head>
+  <body>
+    <nav aria-label="Main">
+      <a href="/probe-pages/team">Team</a>
+      <a href="/probe-pages/settings">Settings</a>
+      <a href="/probe-pages/profile">Profile</a>
+      <button type="button">Sign out</button>
+    </nav>
+    <main data-route="/create-report">
+      <p class="breadcrumb">Home / Create Report</p>
+      <h1>Create a new report</h1>
+      <p>Step 1 of 2 — Name your report.</p>
+      <form name="create_report" data-submit="client_only">
+        <label for="create_report-report-title">Report title</label>
+        <input id="create_report-report-title" name="create_report-report-title" required />
+      </form>
+    <div class="controls">
+      <a class="control" role="button" href="/probe-pages/create-report/step-2">Next</a>
+    </div>
+    </main>
+  </body>
+</html>

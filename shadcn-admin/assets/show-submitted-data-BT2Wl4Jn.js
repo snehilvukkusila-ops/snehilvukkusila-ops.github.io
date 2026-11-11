@@ -1,0 +1,1 @@
+import{V as e}from"./index-DXAdPz1l.js";import{a as t,t as n}from"./jsx-runtime-Wy9s6hX0.js";var r=t(n(),1);function i(t,n=`You submitted the following values:`){e.message(n,{description:(0,r.jsx)(`pre`,{className:`mt-2 w-full overflow-x-auto rounded-md bg-slate-950 p-4`,children:(0,r.jsx)(`code`,{className:`text-white`,children:JSON.stringify(t,null,2)})})})}export{i as t};

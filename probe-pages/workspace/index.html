@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Workspace · Probe Pages</title>
+  </head>
+  <body>
+    <nav aria-label="Main">
+      <a href="/probe-pages/team">Team</a>
+      <a href="/probe-pages/settings">Settings</a>
+      <a href="/probe-pages/profile">Profile</a>
+      <button type="button">Sign out</button>
+    </nav>
+    <main data-route="/workspace">
+      <p class="breadcrumb">Home / Workspace</p>
+      <h1>Workspace</h1>
+      <form name="workspace" data-submit="client_only">
+        <label for="workspace-workspace-name">Workspace name</label>
+        <input id="workspace-workspace-name" name="workspace-workspace-name" required />
+        <label for="workspace-workspace-url">Workspace URL</label>
+        <input id="workspace-workspace-url" name="workspace-workspace-url" />
+        <button type="submit">Save workspace</button>
+      </form>
+    <div class="controls">
+      <a class="control" href="/probe-pages/admin/workspace">Workspace policy</a>
+    </div>
+    </main>
+  </body>
+</html>

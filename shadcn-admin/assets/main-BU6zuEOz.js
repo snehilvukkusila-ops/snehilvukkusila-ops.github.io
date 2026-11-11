@@ -1,0 +1,1 @@
+import{t as e}from"./utils-DIPqLbh7.js";import{a as t,t as n}from"./jsx-runtime-Wy9s6hX0.js";var r=t(n(),1);function i({fixed:t,className:n,fluid:i,...a}){return(0,r.jsx)(`main`,{"data-layout":t?`fixed`:`auto`,className:e(`px-4 py-6`,t&&`flex grow flex-col overflow-hidden`,!i&&`@7xl/content:mx-auto @7xl/content:w-full @7xl/content:max-w-7xl`,n),...a})}export{i as t};

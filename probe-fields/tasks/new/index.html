@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>New task · Probe Fields</title>
+  </head>
+  <body>
+    <nav aria-label="Main">
+      <a href="/probe-fields/tasks">Tasks</a>
+      <a href="/probe-fields/profile">Profile</a>
+      <a href="/probe-fields/about">About</a>
+    </nav>
+    <main data-route="/tasks/new">
+      <p class="breadcrumb">Home / Tasks / New</p>
+      <h1>New task</h1>
+      <p>Describe the task, set its priority and category, and say who should see it.</p>
+      <form name="new_task" data-submit="client_only">
+        <label for="new_task-title">Title</label>
+        <input id="new_task-title" name="new_task-title" required placeholder="e.g. Quarterly review" minlength="3" maxlength="80" />
+        <label for="new_task-priority">Priority</label>
+        <select id="new_task-priority" name="new_task-priority">
+          <option value="" disabled selected>Choose a priority</option>
+          <option value="Low">Low</option>
+          <option value="Medium">Medium</option>
+          <option value="High">High</option>
+        </select>
+        <label for="new_task-category">Category</label>
+        <select id="new_task-category" name="new_task-category">
+          <option value="Engineering">Engineering</option>
+          <option value="Design">Design</option>
+          <option value="Marketing">Marketing</option>
+          <option value="Sales">Sales</option>
+          <option value="Support">Support</option>
+          <option value="Finance">Finance</option>
+          <option value="Legal">Legal</option>
+          <option value="Human Resources">Human Resources</option>
+          <option value="Operations">Operations</option>
+          <option value="Product">Product</option>
+          <option value="Research">Research</option>
+          <option value="Quality Assurance">Quality Assurance</option>
+          <option value="DevOps">DevOps</option>
+          <option value="Security">Security</option>
+          <option value="Data Science">Data Science</option>
+          <option value="Infrastructure">Infrastructure</option>
+          <option value="Growth">Growth</option>
+          <option value="Content">Content</option>
+          <option value="Community">Community</option>
+          <option value="Partnerships">Partnerships</option>
+          <option value="Strategy">Strategy</option>
+          <option value="Analytics">Analytics</option>
+          <option value="Compliance">Compliance</option>
+          <option value="Facilities">Facilities</option>
+        </select>
+        <fieldset>
+          <legend>Visibility</legend>
+          <input type="radio" id="new_task-visibility-0" name="new_task-visibility" value="Private" />
+          <label for="new_task-visibility-0">Private</label>
+          <input type="radio" id="new_task-visibility-1" name="new_task-visibility" value="Team" />
+          <label for="new_task-visibility-1">Team</label>
+          <input type="radio" id="new_task-visibility-2" name="new_task-visibility" value="Public" />
+          <label for="new_task-visibility-2">Public</label>
+        </fieldset>
+        <label for="new_task-notify-watchers">Notify watchers</label>
+        <input type="checkbox" id="new_task-notify-watchers" name="new_task-notify-watchers" />
+        <label for="new_task-estimate-hours">Estimate (hours)</label>
+        <input type="number" id="new_task-estimate-hours" name="new_task-estimate-hours" min="0" max="40" step="0.5" aria-describedby="new_task-estimate-hours-help" />
+        <p id="new_task-estimate-hours-help">Use half-hour steps.</p>
+        <label for="new_task-reference">Reference</label>
+        <input id="new_task-reference" name="new_task-reference" readonly value="REF-SECRET-123" />
+        <label for="new_task-code">Code</label>
+        <input id="new_task-code" name="new_task-code" pattern="[A-Z]{3}-[0-9]{2}" disabled />
+        <button type="submit">Save</button>
+      </form>
+    </main>
+  </body>
+</html>

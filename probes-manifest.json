@@ -1,0 +1,35 @@
+{
+ "probe-pages": {
+  "routes": [
+   "/probe-pages/dashboard",
+   "/probe-pages/team",
+   "/probe-pages/invite",
+   "/probe-pages/settings",
+   "/probe-pages/create-report",
+   "/probe-pages/create-report/step-2",
+   "/probe-pages/workspace",
+   "/probe-pages/admin/workspace",
+   "/probe-pages/profile",
+   "/probe-pages/not-found"
+  ],
+  "root_live_status": 200
+ },
+ "probe-fields": {
+  "routes": [
+   "/probe-fields/tasks",
+   "/probe-fields/tasks/new",
+   "/probe-fields/profile",
+   "/probe-fields/about"
+  ],
+  "root_live_status": 404
+ },
+ "probe-guide": {
+  "routes": [
+   "/probe-guide/goals",
+   "/probe-guide/goals/new",
+   "/probe-guide/goals/1/edit",
+   "/probe-guide/reports"
+  ],
+  "root_live_status": 404
+ }
+}

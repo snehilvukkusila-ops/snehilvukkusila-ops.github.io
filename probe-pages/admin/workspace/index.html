@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Workspace policy · Probe Pages</title>
+  </head>
+  <body>
+    <nav aria-label="Main">
+      <a href="/probe-pages/team">Team</a>
+      <a href="/probe-pages/settings">Settings</a>
+      <a href="/probe-pages/profile">Profile</a>
+      <button type="button">Sign out</button>
+    </nav>
+    <main data-route="/admin/workspace">
+      <p class="breadcrumb">Home / Admin / Workspace</p>
+      <h1>Workspace policy</h1>
+      <form name="workspace_policy" data-submit="client_only">
+        <label for="workspace_policy-data-retention-days">Data retention days</label>
+        <input type="number" id="workspace_policy-data-retention-days" name="workspace_policy-data-retention-days" />
+        <label for="workspace_policy-allowed-email-domain">Allowed email domain</label>
+        <input id="workspace_policy-allowed-email-domain" name="workspace_policy-allowed-email-domain" />
+        <button type="submit">Apply policy</button>
+      </form>
+    </main>
+  </body>
+</html>

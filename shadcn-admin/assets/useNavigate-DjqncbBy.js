@@ -1,0 +1,1 @@
+import{t as e}from"./useRouter-DAYosDT2.js";import{a as t,n}from"./jsx-runtime-Wy9s6hX0.js";var r=t(n(),1);function i(t){let n=e();return r.useCallback(e=>n.navigate({...e,from:e.from??t?.from}),[t?.from,n])}export{i as t};
